@@ -1,1 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header Styles */
+#header_wrapper {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 0.5rem 1rem;
+}
+
+#site_heading {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#burger {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#primary_navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#primary_navigation li {
+    margin: 0 1rem;
+}
+
+#primary_navigation a {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    transition: border-bottom 0.3s;
+}
+
+#primary_navigation a:hover {
+    /* background: #555; */
+    border-bottom: 2px solid #555;
+}
+
+#header_text {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#header_text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#header_text h2 {
+    margin: 0.5rem 0 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+#header_photo img {
+    width: 100%;
+    height: auto;
+}
+
+/* Main Content Styles */
+#content_background {
+    background: #fff;
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 0 0 48%;
+    margin-bottom: 2rem;
+}
+
+h1, h2, p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #666;
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.asterion_divider {
+    border-top: 5px solid #000;
+}
+
+@media (max-width: 768px) {
+    #primary_navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    .column {
+        flex: 0 0 100%;
+    }
+}
