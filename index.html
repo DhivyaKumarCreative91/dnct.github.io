@@ -3,123 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DNCT Technologies</title>
+    <title>DNCT Technologies - Innovate, Inspire & Impact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function toggleMenu() {
-            var nav = document.getElementById("primary_navigation");
-            if (nav.style.display === "block") {
-                nav.style.display = "none";
-            } else {
-                nav.style.display = "block";
-            }
-        }
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
-    <div id="body_wrapper">
-        <div id="wrapper">
-            <header id="header_wrapper" itemscope itemtype="http://schema.org/WPHeader">
-                <div class="wrapper">
-                    <div class="container">
-                        <div class="navbar">
-                            <div id="site_heading">DNCT Technologies</div>
-                            <div id="burger" onclick="toggleMenu()">&#9776;</div>
-                            <ul id="primary_navigation">
-                                <li class="first even item_0">
-                                    <a class="navigation_page_link" href="/home"><span>Home</span></a>
-                                </li>
-                                <li class="odd item_1">
-                                    <a class="navigation_page_link" href="/services"><span>Services</span></a>
-                                </li>
-                                <li class="even item_2">
-                                    <a class="navigation_page_link" href="/aboutus"><span>About us</span></a>
-                                </li>
-                                <li class="odd item_3">
-                                    <a class="navigation_page_link" href="/contact"><span>Contact us</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="header_text">
-                            <h1 id="site_subheading">Innovative Solutions for Your Business</h1>
-                        </div>
-                    </div>
-                    <div id="header_background">
-                        <div class="container" id="header_photo">
-                            <img class="header_photo theme_image" alt="header photo"
-                                src="images\homepage_image1.jpg" />
-                        </div>
-                    </div>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images\logo.jpg" alt="DNCT Technologies Logo">
                 </div>
-            </header>
-            <main id="content_background">
-                <div class="container" id="content_wrapper">
-                    <section class="row" id="middle_wrapper">
-                        <div class="wrapper">
-                            <div class="span12" id="main">
-                                <article class="row" data-id="69966">
-                                    <div class="column col-md-12 span12" data-location_id="8" data-width="12" data-id="144914">
-                                        <div class="location" id="location_8">
-                                            <div class="asterion_components_container asterion_page_specific_components asterion_components_container_2">
-                                                <div class="component custom_component unauthenticated " data-proxy-id=""
-                                                    id="component_655898" data-id="655898">
-                                                    <div class="component_content_wrapper ">
-                                                        <div class="component_content">
-                                                            <h1>DNCT technologies</h1>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="component divider_component unauthenticated " data-proxy-id=""
-                                                    id="component_655899" data-id="655899">
-                                                    <div class="component_content_wrapper ">
-                                                        <div class="component_content">
-                                                            <hr class="asterion_divider" />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="row" data-id="69964">
-                                    <div class="column col-md-6 span6" data-location_id="5" data-width="6" data-id="144911">
-                                        <div class="location" id="location_5">
-                                            <div class="asterion_components_container asterion_page_specific_components asterion_components_container_2">
-                                                <div class="component custom_component unauthenticated " data-proxy-id=""
-                                                    id="component_617330" data-id="617330">
-                                                    <div class="component_content_wrapper ">
-                                                        <div class="component_content">
-                                                            <p><strong>ABOUT US</strong></p>
-                                                            <p>We use our proven consulting practices and methodologies to solve all customer problems, using high-end technologies & ERP solutions. We make our customers happy by helping them make the change towards better processes & systems so they get high returns on investments in technologies.</p>
-                                                            <p>We focus on increasing your revenues, productivity & efficiency. Technology is just part of the solution. We believe in high-quality standards, ethics and go the last mile to win the trust of our customers.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="column col-md-6 span6" data-location_id="6" data-width="6" data-id="144912">
-                                        <div class="location" id="location_6">
-                                            <div class="asterion_components_container asterion_page_specific_components asterion_components_container_2">
-                                                <div class="component custom_component unauthenticated " data-proxy-id=""
-                                                    id="component_617331" data-id="617331">
-                                                    <div class="component_content_wrapper ">
-                                                        <div class="component_content">
-                                                            <p><strong>OUR TEAM</strong></p>
-                                                            <p>Since 2017 we have managed to collect a unique and highly efficient team of experts who acquire exclusive competencies in diverse fields. Our team is dedicated to providing innovative solutions to our clients.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </section>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
                 </div>
-            </main>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="hero" data-aos="fade-up">
+                    <h1>Innovate, Inspire & Impact</h1>
+                    <p>Empowering your digital transformation journey</p>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" data-aos="fade-up">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-card" data-aos="zoom-in">
+                        <img src="icons/code-2-svgrepo-com.svg" alt="Software Development">
+                        <h3>Software Development</h3>
+                        <p>We offer comprehensive software development services tailored to meet the unique needs of your business. We specialize in crafting custom software solutions that drive efficiency, innovation, and competitiveness. From initial concept to final deployment, our expert team employs the latest technologies and agile methodologies to deliver scalable, robust, and intuitive software applications designed to empower your business operations and deliver exceptional user experiences.</p>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in">
+                        <img src="icons/ai-svgrepo-com.svg" alt="Machine Learning">
+                        <h3>Machine Learning</h3>
+                        <p>Harness the power of artificial intelligence with our machine-learning solutions. We transform vast amounts of data into actionable insights, automate complex processes, and create predictive models to propel your business forward. Our machine learning services enable you to make data-driven decisions, optimize operations, and create personalized experiences for your customers, keeping you ahead in the rapidly advancing landscape of AI technology.</p>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in">
+                        <img src="icons/test-tube-empty-svgrepo-com.svg" alt="Testing & QA">
+                        <h3>Testing & QA</h3>
+                        <p>Ensure the highest quality for your software with our rigorous testing and QA services. Our meticulous approach covers everything from functionality and performance to security and user experience. We identify and address issues early in the development cycle, reducing costs and accelerating time to market. Trust our QA experts to enhance the reliability and stability of your software, guaranteeing a flawless product that your users can depend on.</p>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in">
+                        <img src="icons/support-svgrepo-com.svg" alt="Help Desk Services">
+                        <h3>Help Desk Services</h3>
+                        <p>Our help desk support services are designed to provide end-users with quick, proficient assistance on a range of software issues. We offer multi-channel support through phone, email, live chat, or social media, ensuring your users always have a helping hand when they need it. With a focus on rapid response times and resolution rates, our help desk professionals are committed to maintaining high satisfaction levels and uninterrupted business operations.</p>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in">
+                        <img src="icons/business-consulting-prediction-data-show-svgrepo-com.svg" alt="IT Consulting">
+                        <h3>IT Consulting</h3>
+                        <p>Navigate the complexities of digital transformation with our IT consulting services. We partner with you to develop strategic technology solutions that align with your business goals. From system integration to network infrastructure, and from cloud migration to cybersecurity, our consultants bring deep industry expertise to deliver bespoke IT strategies that optimize costs, enhance agility, and drive sustainable growth.</p>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in">
+                        <img src="icons/ui8-svgrepo-com.svg" alt="UI/UX Design">
+                        <h3>UI/UX Design</h3>
+                        <p>Create captivating and user-centric digital experiences with our UI/UX design services. Our design team blends creativity with functionality to craft interfaces that are not only visually striking but also highly intuitive and accessible. We conduct thorough user research and testing to ensure that our designs meet the needs of your target audience, enhancing user satisfaction, and maximizing engagement.</p>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in">
+                        <img src="icons/application-design-grid-layout-svgrepo-com.svg" alt="Application Services">
+                        <h3>Application Services</h3>
+                        <p>Our application management services ensure your software applications are always up-to-date, secure, and operating at peak performance. From ongoing maintenance to proactive upgrades, our team handles all aspects of application management, allowing you to focus on your core business. Whether it’s legacy system modernization, cloud-based applications, or enterprise software support, we provide end-to-end services to keep your applications agile and effective in supporting your business needs.</p>
+                    </div>
+                    <div class="service-card" data-aos="zoom-in">
+                        <img src="icons/software-svgrepo-com.svg" alt="ERP Solutions">
+                        <h3>ERP Solutions</h3>
+                        <p>Our ERP (Enterprise Resource Planning) solutions streamline and automate your core business processes, ensuring optimal performance and efficiency. By integrating all essential functions such as finance, human resources, manufacturing, supply chain, and procurement into a single system, our ERP solutions provide a unified source of truth for your organization. This enables real-time data access, improved decision-making, and enhanced collaboration across departments. Whether you need on-premises or cloud-based ERP systems, our comprehensive services cover implementation, customization, and ongoing support to help your business achieve its goals and maintain a competitive edge</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" data-aos="fade-up">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>At DNCT Technologies, we are passionate about driving innovation and delivering impactful solutions. Our team of experts combines cutting-edge technology with industry best practices to help businesses thrive in the digital age.</p>
+                        <p>We believe in the power of technology to transform businesses and improve lives. Our commitment to excellence and customer satisfaction sets us apart in the industry.</p>
+                    </div>
+                    <div class="team-info" data-aos="fade-left">
+                        <h3>Our Approach</h3>
+                        <ul>
+                            <li>Innovative Solutions</li>
+                            <li>Customer-Centric Focus</li>
+                            <li>Continuous Learning</li>
+                            <li>Collaborative Partnership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" data-aos="fade-up">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 DNCT Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+      <script src="script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 </html>
